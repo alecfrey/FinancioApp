@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/miAddFriend"
+        android:title="Add Friend"
+        android:icon="@drawable/ic_person_add_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/miAddCategory"
+        android:title="Add Category"
+        android:icon="@drawable/ic_category_add_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/miResetExpenses"
+        android:title="Reset Expenses"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/miSettings"
+        android:title="Settings"
+        android:icon="@drawable/ic_home_settings_24dp"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/miLogout"
+        android:title="Sign Out"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/miClose"
+        android:title="Close App"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/miLeaderboards"
+        android:title="Leaderboards"
+        android:icon="@drawable/ic_leaderboard_24dp"
+        app:showAsAction="always" />
+
+</menu>

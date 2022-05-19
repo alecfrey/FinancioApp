@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.home.HomeFragment">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/glTop" />
+
+    <TextView
+        android:id="@+id/tvHomeColor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text=""
+        android:background="#88d498"
+        app:layout_constraintBottom_toTopOf="@+id/line"
+        app:layout_constraintEnd_toEndOf="@+id/tvTotalSpent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvExpenseCostOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp"
+        android:hint="0"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDollarSign7"
+        app:layout_constraintStart_toEndOf="@+id/tvDollarSign7"
+        app:layout_constraintTop_toTopOf="@+id/tvDollarSign7" />
+
+    <TextView
+        android:id="@+id/tvDollarSign7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvExpenseOther"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/tvExpenseOther" />
+
+    <TextView
+        android:id="@+id/tvExpenseOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:text="Other:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/imgOther"
+        app:layout_constraintTop_toBottomOf="@+id/tvExpenseAlcohol" />
+
+    <ImageView
+        android:id="@+id/imgOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_other_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvExpenseOther"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvExpenseOther" />
+
+    <TextView
+        android:id="@+id/tvExpenseCostAlcohol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:textSize="16sp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDollarSign6"
+        app:layout_constraintStart_toEndOf="@+id/tvDollarSign6"
+        app:layout_constraintTop_toTopOf="@+id/tvDollarSign6" />
+
+    <TextView
+        android:id="@+id/tvDollarSign6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvExpenseAlcohol"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/tvExpenseAlcohol" />
+
+    <TextView
+        android:id="@+id/tvExpenseAlcohol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Alcohol:"
+        android:layout_marginLeft="8dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/imgAlcohol"
+        app:layout_constraintTop_toBottomOf="@+id/tvExpenseGas" />
+
+    <ImageView
+        android:id="@+id/imgAlcohol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_drink_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvExpenseAlcohol"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvExpenseAlcohol" />
+
+    <TextView
+        android:id="@+id/tvExpenseCostGas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp"
+        android:hint="0"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDollarSign5"
+        app:layout_constraintStart_toEndOf="@+id/tvDollarSign5"
+        app:layout_constraintTop_toTopOf="@+id/tvDollarSign5" />
+
+    <TextView
+        android:id="@+id/tvDollarSign5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvExpenseGas"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/tvExpenseGas" />
+
+    <ImageView
+        android:id="@+id/imgGas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_gas_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvExpenseGas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvExpenseGas" />
+
+    <TextView
+        android:id="@+id/tvExpenseGas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:text="Gas:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/imgGas"
+        app:layout_constraintTop_toBottomOf="@+id/tvExpenseGrocery" />
+
+    <TextView
+        android:id="@+id/tvDollarSign4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvExpenseGrocery"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/tvExpenseGrocery" />
+
+    <TextView
+        android:id="@+id/tvExpenseCostGrocery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp"
+        android:hint="0"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDollarSign4"
+        app:layout_constraintStart_toEndOf="@+id/tvDollarSign4"
+        app:layout_constraintTop_toTopOf="@+id/tvDollarSign4" />
+
+    <ImageView
+        android:id="@+id/imgExpenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_house_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvExpenseEssentials"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvExpenseEssentials" />
+
+    <TextView
+        android:id="@+id/tvExpenseGrocery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="8dp"
+        android:text="Grocery:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/imgGrocery"
+        app:layout_constraintTop_toBottomOf="@+id/tvExpenseEssentials" />
+
+    <TextView
+        android:id="@+id/tvExpenseCostEssentials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:textSize="16sp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDollarSign3"
+        app:layout_constraintStart_toEndOf="@+id/tvDollarSign3"
+        app:layout_constraintTop_toTopOf="@+id/tvDollarSign3" />
+
+    <ImageView
+        android:id="@+id/imgGrocery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_grocery_24dp"
+        android:layout_marginLeft="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvExpenseGrocery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvExpenseGrocery" />
+
+    <TextView
+        android:id="@+id/tvDollarSign3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvExpenseEssentials"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/tvExpenseEssentials" />
+
+    <TextView
+        android:id="@+id/tvExpenseEssentials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Essentials:"
+        android:layout_marginLeft="8dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/imgExpenses"
+        app:layout_constraintTop_toBottomOf="@+id/tvExpenseSubscriptions" />
+
+    <TextView
+        android:id="@+id/tvExpenseSubscriptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Subscriptions:"
+        android:layout_marginLeft="8dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/imgSubscriptions"
+        app:layout_constraintTop_toBottomOf="@+id/tvExpenseRestaurant" />
+
+    <TextView
+        android:id="@+id/tvCategoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:text="Top Categories"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvHomeColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTotalSpent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Total Spent"
+        android:layout_marginRight="6dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCategoryTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvCategoryTitle" />
+
+    <ImageView
+        android:id="@+id/imgFastFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_fastfood_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvExpenseRestaurant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvExpenseRestaurant" />
+
+    <TextView
+        android:id="@+id/tvDollarSign1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvExpenseRestaurant"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/tvExpenseRestaurant" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="70dp" />
+
+    <ImageView
+        android:id="@+id/imgSubscriptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48dp"
+        android:layout_marginLeft="6dp"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_subscriptions_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvExpenseSubscriptions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvExpenseSubscriptions" />
+
+    <TextView
+        android:id="@+id/tvDollarSign2"
+        android:layout_width="15dp"
+        android:layout_height="30dp"
+        android:text="$"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvExpenseSubscriptions"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/tvExpenseSubscriptions" />
+
+    <TextView
+        android:id="@+id/tvExpenseRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="8dp"
+        android:text="Restaurant:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/imgFastFood"
+        app:layout_constraintTop_toTopOf="@+id/glTop" />
+
+    <TextView
+        android:id="@+id/tvExpenseCostRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp"
+        android:hint="0"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDollarSign1"
+        app:layout_constraintStart_toEndOf="@+id/tvDollarSign1"
+        app:layout_constraintTop_toTopOf="@+id/tvDollarSign1" />
+
+    <TextView
+        android:id="@+id/tvExpenseCostSubscriptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDollarSign2"
+        app:layout_constraintStart_toEndOf="@+id/tvDollarSign2"
+        app:layout_constraintTop_toTopOf="@+id/tvDollarSign2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="100dp" />
+
+    <FrameLayout
+        android:id="@+id/home_add_expense"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

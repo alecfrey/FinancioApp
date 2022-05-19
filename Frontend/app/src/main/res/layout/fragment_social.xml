@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="55dp"
+    tools:context=".ui.social.SocialFragment">
+
+    <RelativeLayout
+        android:id="@+id/rlSocialHeader"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#c6dabf">
+
+        <EditText
+            android:id="@+id/etEnterUserID"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ems="10"
+            android:hint="Enter User ID:" />
+
+        <ImageButton
+            android:id="@+id/imgAddFriend"
+            android:src="@drawable/ic_person_add_24dp"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_toRightOf="@id/etEnterUserID"
+            android:layout_marginLeft="7sp"
+            android:layout_centerVertical="true"/>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="99dp"
+            android:background="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvFriends"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:listitem="@layout/list_item" />
+
+    <FrameLayout
+        android:id="@+id/social_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

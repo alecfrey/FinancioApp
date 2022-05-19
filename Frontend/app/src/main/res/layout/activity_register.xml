@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegisterTag" />
+
+    <EditText
+        android:id="@+id/field_uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+
+    <EditText
+        android:id="@+id/field_pword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/field_uname"
+        app:layout_constraintTop_toBottomOf="@+id/field_uname" />
+
+    <Spinner
+        android:id="@+id/spinner_state"
+        android:layout_width="138dp"
+        android:layout_height="38dp"
+        android:entries="@array/states"
+        app:layout_constraintEnd_toEndOf="@+id/field_city"
+        app:layout_constraintTop_toBottomOf="@+id/field_city" />
+
+    <EditText
+        android:id="@+id/field_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/field_pword"
+        app:layout_constraintTop_toBottomOf="@+id/field_pword" />
+
+    <EditText
+        android:id="@+id/field_fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="First name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/field_email" />
+
+    <EditText
+        android:id="@+id/field_lname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Last name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/field_fname"
+        app:layout_constraintTop_toBottomOf="@+id/field_fname" />
+
+    <EditText
+        android:id="@+id/field_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/field_address"
+        app:layout_constraintTop_toBottomOf="@+id/field_address" />
+
+    <EditText
+        android:id="@+id/field_zip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Zip Code"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/field_city"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_state" />
+
+    <EditText
+        android:id="@+id/field_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/field_lname"
+        app:layout_constraintTop_toBottomOf="@+id/field_lname" />
+
+    <Button
+        android:id="@+id/realregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="registerAccount"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRegisterTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Register Account"
+        android:textSize="28sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvExtraInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extra Information"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/field_fname"
+        app:layout_constraintEnd_toEndOf="@+id/field_fname"
+        app:layout_constraintStart_toStartOf="@+id/field_fname" />
+
+    <TextView
+        android:id="@+id/tvEnterState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=" State"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/field_zip"
+        app:layout_constraintStart_toStartOf="@+id/field_city"
+        app:layout_constraintTop_toBottomOf="@+id/field_city" />
+
+    <EditText
+        android:id="@+id/field_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Gender"
+        app:layout_constraintStart_toStartOf="@+id/field_zip"
+        app:layout_constraintTop_toBottomOf="@+id/field_zip" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

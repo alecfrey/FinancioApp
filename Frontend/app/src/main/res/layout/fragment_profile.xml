@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <TextView
+        android:id="@+id/tvProfileColorMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#c6dabf"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/tvProfileColorBottom"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/tvProfileColorBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text=""
+        android:background="#f3e9d2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2"
+        tools:layout_editor_absoluteX="149dp" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileSetState" />
+
+    <ImageButton
+        android:id="@+id/imgProfilePicture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="false"
+        android:backgroundTint="#989898"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvProfileUsername"
+        android:layout_width="215dp"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:hint="Username"
+        android:focusable="false"
+        android:textColor="@color/black"
+        android:enabled="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:inputType="textPersonName|textNoSuggestions"
+        app:layout_constraintBottom_toBottomOf="@+id/imgProfilePicture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgProfilePicture"
+        app:layout_constraintTop_toTopOf="@+id/imgProfilePicture" />
+
+    <TextView
+        android:id="@+id/tvProfileGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvProfileSetGender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvProfileSetGender" />
+
+    <TextView
+        android:id="@+id/tvProfileSetGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:ems="10"
+        app:layout_constraintStart_toEndOf="@+id/tvProfileGender"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfilePicture" />
+
+    <TextView
+        android:id="@+id/tvProfileState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="State:"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvProfileSetState"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvProfileSetState" />
+
+    <TextView
+        android:id="@+id/tvProfileSetState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tvProfileState"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileSetGender" />
+
+    <ImageButton
+        android:id="@+id/imgCompareMonths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_compare_24dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCurrentBudget"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvCurrentBudget" />
+
+    <TextView
+        android:id="@+id/tvAddPictureMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Add Picture"
+        app:layout_constraintBottom_toBottomOf="@+id/imgProfilePicture"
+        app:layout_constraintEnd_toEndOf="@+id/imgProfilePicture"
+        app:layout_constraintStart_toStartOf="@+id/imgProfilePicture"
+        app:layout_constraintTop_toTopOf="@+id/imgProfilePicture" />
+
+    <TextView
+        android:id="@+id/tvUserID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="User ID"
+        android:textStyle="bold"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvCurrentBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="Current Budget:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+    <TextView
+        android:id="@+id/tvProfileRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
+        android:text="Restaurant: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCurrentBudget" />
+
+    <TextView
+        android:id="@+id/tvProfileSubscriptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:text="Subscriptions: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileRestaurant" />
+
+    <TextView
+        android:id="@+id/tvProfileEssentials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:text="Essentials: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileSubscriptions" />
+
+    <TextView
+        android:id="@+id/tvProfileGrocery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:text="Grocery: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileEssentials" />
+
+    <TextView
+        android:id="@+id/tvProfileGas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:text="Gas: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileGrocery" />
+
+    <TextView
+        android:id="@+id/tvProfileAlcohol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:text="Alcohol: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileGas" />
+
+    <TextView
+        android:id="@+id/tvProfileOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:text="Other: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileAlcohol" />
+
+    <TextView
+        android:id="@+id/tvProfileTotalBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: $0.00"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCurrentBudget"
+        app:layout_constraintEnd_toStartOf="@+id/imgCompareMonths"
+        app:layout_constraintTop_toTopOf="@+id/tvCurrentBudget" />
+
+    <FrameLayout
+        android:id="@+id/fragment_compare"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

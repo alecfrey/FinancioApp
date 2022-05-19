@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <EditText
+        android:id="@+id/etExpenseActivityOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Other"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/etExpenseActivitySubscriptions"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etExpenseActivitySubscriptions"
+        app:layout_constraintTop_toBottomOf="@+id/etExpenseActivityAlcohol" />
+
+    <EditText
+        android:id="@+id/etExpenseActivityAlcohol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Alcohol"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/etExpenseActivitySubscriptions"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etExpenseActivitySubscriptions"
+        app:layout_constraintTop_toBottomOf="@+id/etExpenseActivityGas" />
+
+    <EditText
+        android:id="@+id/etExpenseActivityGas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Gas"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/etExpenseActivitySubscriptions"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etExpenseActivitySubscriptions"
+        app:layout_constraintTop_toBottomOf="@+id/etExpenseActivityGrocery" />
+
+    <EditText
+        android:id="@+id/etExpenseActivityGrocery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Grocery"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/etExpenseActivitySubscriptions"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etExpenseActivitySubscriptions"
+        app:layout_constraintTop_toBottomOf="@+id/etExpenseActivityEssentials" />
+
+    <EditText
+        android:id="@+id/etExpenseActivityEssentials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Essentials"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/etExpenseActivitySubscriptions"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etExpenseActivitySubscriptions"
+        app:layout_constraintTop_toBottomOf="@+id/etExpenseActivitySubscriptions" />
+
+    <EditText
+        android:id="@+id/etExpenseActivitySubscriptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Subscriptions"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/etExpenseActivityRestaurant"
+        app:layout_constraintStart_toStartOf="@+id/etExpenseActivityRestaurant"
+        app:layout_constraintTop_toBottomOf="@+id/etExpenseActivityRestaurant" />
+
+    <EditText
+        android:id="@+id/etExpenseActivityRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Restaurant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvExpenseTitle" />
+
+    <TextView
+        android:id="@+id/tvExpenseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Your Budget"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnEnterExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Budget"
+        android:onClick="confirmBudget"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etExpenseActivityOther" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
