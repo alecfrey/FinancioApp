@@ -1,4 +1,4 @@
-# FinancioApp
+# Financio App
 Finance application for Android
 
 - Input all expenses into app to help recognize spending habits with visuals
