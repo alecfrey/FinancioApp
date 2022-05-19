@@ -9,5 +9,5 @@ Finance application for Android
 
 ## Team Members
 Alec Frey, 
-Jeffery Kasper, 
-Parker Schmitz
+ Jeffery Kasper, 
+ Parker Schmitz
