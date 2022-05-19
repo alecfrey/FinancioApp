@@ -6,3 +6,8 @@ Finance application for Android
 - User login with database
 - Add and message friends in app
 - Android Studio, Spring Boot, MySQL, Web Sockets, GitLab
+
+## Team Members
+Jeffery Kasper
+Alec Frey
+Parker Schmitz
