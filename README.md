@@ -8,6 +8,6 @@ Finance application for Android
 - Android Studio, Spring Boot, MySQL, Web Sockets, GitLab
 
 ## Team Members
-Alec Frey,
-Jeffery Kasper,
+Alec Frey, 
+Jeffery Kasper, 
 Parker Schmitz
