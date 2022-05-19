@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/Frontend/app/src/main/res/drawable/ic_arrow_back_24dp.xml" value="0.4545" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/Frontend/app/src/main/res/drawable/ic_other_24dp.xml" value="0.5325" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/Frontend/app/src/main/res/drawable/ic_profile_editBudget_24dp.xml" value="0.5475" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/Frontend/app/src/main/res/drawable/ic_profile_edit_24dp.xml" value="0.5475" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/Frontend/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/Frontend/app/src/main/res/layout/custom_toast.xml" value="0.45729166666666665" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/Frontend/app/src/main/res/layout/fragment_add_expense.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/Frontend/app/src/main/res/layout/fragment_edit_budget.xml" value="0.67" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/Frontend/app/src/main/res/layout/fragment_home.xml" value="0.5870917573872473" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/Frontend/app/src/main/res/layout/fragment_homeOLD.xml" value="0.5385416666666667" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/Frontend/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/Frontend/app/src/main/res/menu/bottom_nav_menu.xml" value="0.5385416666666667" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/Frontend/app/src/main/res/menu/top_bar_menu.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/Frontend/app/src/main/res/xml/network_security_config.xml" value="0.3880208333333333" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/app/src/main/res/layout/activity_compare.xml" value="0.45606884057971014" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/app/src/main/res/layout/activity_login.xml" value="0.4678442028985507" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/app/src/main/res/layout/activity_main.xml" value="0.3763586956521739" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/app/src/main/res/layout/activity_register.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/app/src/main/res/layout/activity_settings.xml" value="0.45606884057971014" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/app/src/main/res/layout/custom_toast.xml" value="0.42617753623188404" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/app/src/main/res/layout/fragment_add_expense.xml" value="0.4741847826086957" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/app/src/main/res/layout/fragment_chat.xml" value="0.5" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/app/src/main/res/layout/fragment_edit_budget.xml" value="0.20555555555555555" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/app/src/main/res/layout/fragment_home.xml" value="0.32971014492753625" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/app/src/main/res/layout/fragment_profile.xml" value="0.5" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/app/src/main/res/layout/fragment_social.xml" value="0.5" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/app/src/main/res/layout/list_item.xml" value="0.4633920296570899" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/app/src/main/res/layout/profile_compare.xml" value="0.4260355029585799" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/app/src/main/res/menu/top_bar_menu.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/Alec Frey/AndroidStudioProjects/1_mc_1/Frontend/app/src/main/res/xml/preferences.xml" value="0.45606884057971014" />
+        <entry key="app/src/main/res/layout/activity_expense.xml" value="0.3489583333333333" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.3489583333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.12" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/layout/fragment_add_expense.xml" value="0.3489583333333333" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.3489583333333333" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.3489583333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" value="$USER_HOME$/Downloads" />
+    <option name="OTHER_OPTIONS" value="-sourcepath &quot;C:/Users/Alec Frey/AppData/Local/Android/Sdk/platforms/android-32/android.jar&quot;" />
+    <option name="OPTION_INCLUDE_LIBS" value="true" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
